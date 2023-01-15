@@ -1,5 +1,7 @@
 package stepDefinitions;
 
-public class DelProgSteps {
+import resources.Utils;
+
+public class DelProgSteps extends Utils  {
 
 }

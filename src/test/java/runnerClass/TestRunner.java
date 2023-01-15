@@ -15,10 +15,9 @@ import io.cucumber.junit.CucumberOptions;
 		
 		plugin= {"pretty",
 				"html:target/Cucumber.html",
-                "json:target/Cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "json:target/Cucumber.json",
                  "rerun:target/failedScenarios.txt"})
-		
-
+	
 public class TestRunner {
 
 }

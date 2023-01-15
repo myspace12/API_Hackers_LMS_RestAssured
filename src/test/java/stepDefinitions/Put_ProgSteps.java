@@ -1,5 +1,7 @@
 package stepDefinitions;
 
-public class Put_ProgSteps {
+import resources.Utils;
+
+public class Put_ProgSteps extends Utils  {
 
 }

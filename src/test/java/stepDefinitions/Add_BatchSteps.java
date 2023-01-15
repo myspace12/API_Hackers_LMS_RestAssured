@@ -1,5 +1,7 @@
 package stepDefinitions;
 
-public class Add_BatchSteps {
+import resources.Utils;
+
+public class Add_BatchSteps extends Utils {
 
 }

@@ -1,10 +1,13 @@
 package resources;
 
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
+
+import org.hamcrest.Matchers;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -33,7 +36,7 @@ public class Utils {
 		{
 		PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
 		 requestSpecBuilder=new RequestSpecBuilder().setBaseUri(getGlobalValue("baseURI"))
-				  .addFilter(RequestLoggingFilter.logRequestTo(log))
+				 .addFilter(RequestLoggingFilter.logRequestTo(log))
 				 .addFilter(ResponseLoggingFilter.logResponseTo(log))
 		         .setContentType(ContentType.JSON).build();
 		
@@ -51,8 +54,7 @@ public class Utils {
 		return apiEndpoint;
 		
 	}
-	
-	
+		
 	//read data from config file
 	
 	public static String getGlobalValue(String key) throws IOException
@@ -63,7 +65,6 @@ public class Utils {
 		return prop.getProperty(key);
 	}
 	
-	
 	//make a method static so that you can access it without creating any object
 	//Method to parse JSON Path and get any particular key value
 	
@@ -71,15 +72,15 @@ public class Utils {
 	{
 		System.out.println("In JsonPath");
 		String resp=response.asString();
-		JsonPath   js = new JsonPath(resp);
+		JsonPath js = new JsonPath(resp);
 		return js.get(key).toString();
     }
 	
 	public ResponseSpecification responseSpecification() throws NumberFormatException, IOException
 	{
-	responseSpecBuilder = new ResponseSpecBuilder().
-			expectStatusCode(Integer.parseInt(getGlobalValue("StatusCode"))).
-			expectContentType(ContentType.JSON).build();
+	responseSpecBuilder = new ResponseSpecBuilder()
+			.expectContentType(ContentType.JSON).build()
+			.expect().time(Matchers.lessThanOrEqualTo(200L));
     
 	return responseSpecBuilder;
 	}

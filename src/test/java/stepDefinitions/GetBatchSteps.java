@@ -1,5 +1,7 @@
 package stepDefinitions;
 
-public class GetBatchSteps {
+import resources.Utils;
+
+public class GetBatchSteps extends Utils  {
 
 }

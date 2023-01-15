@@ -1,5 +1,7 @@
 package stepDefinitions;
 
-public class DelBatchSteps {
+import resources.Utils;
+
+public class DelBatchSteps extends Utils  {
 
 }
