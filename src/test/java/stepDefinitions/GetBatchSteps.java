@@ -9,13 +9,6 @@ import java.io.IOException;
 public class GetBatchSteps extends Utils  {
 
 		
-
-	@Given("user has baseURI")
-	public void user_has_base_uri() throws IOException {
-		res=given().spec(requestSpecification());
-	}
-
-
 	@Given("user has valid {int}")
 	public void user_has_valid(int string) {
 	   
