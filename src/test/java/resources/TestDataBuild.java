@@ -1,24 +1,31 @@
 package resources;
 
+import pojo_Classes.AddBatch;
+import pojo_Classes.AddProg;
 import pojo_Classes.PutBatch;
 
 public class TestDataBuild {
+			
 	
-	public PutBatch putBatchPayload(String batchNm, String batchDes, 
-			String batchStatus, int noOfClasses, int progId , String progNm)
+	
+	public PutBatch putBatchPayload(String batchName, String batchDescription, 
+			String batchStatus, int batchnoOfClasses, int programId , String programName)
 	{
 		//create object for pojo class 
 		
 		PutBatch p = new PutBatch();
-		p.setBatchNm(batchNm);
-		p.setBatchDes(batchDes);
+		p.setBatchName(batchName);
+		p.setBatchDescription(batchDescription);
 		p.setBatchStatus(batchStatus);
-		p.setBatchNoOfClasses(noOfClasses);
-		p.setProgId(progId);
-		p.getProgNm();
-		
+		p.setBatchNoOfClasses(batchnoOfClasses);
+		p.setProgramId(programId);
+		p.setProgramName(programName);
+	
 		return p;
 		
 	}
+	
+	
+	
 
 }

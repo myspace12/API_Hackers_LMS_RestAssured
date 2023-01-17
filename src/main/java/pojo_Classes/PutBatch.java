@@ -3,48 +3,73 @@ package pojo_Classes;
 public class PutBatch {
 	
 	
-	private String batchNm;
-	private String batchDes;
+	private String batchName;
+	private String batchDescription;
 	private String batchStatus;
 	private int batchNoOfClasses;
-	private int progId;
-	private String progNm;
+	private int programId;
+	private String programName;
 	
-	public String getBatchNm() {
-		return batchNm;
+	
+	public String getBatchName() {
+		return batchName;
 	}
-	public void setBatchNm(String batchNm) {
-		this.batchNm = batchNm;
+
+
+	public void setBatchName(String batchName) {
+		this.batchName = batchName;
 	}
-	public String getBatchDes() {
-		return batchDes;
+
+
+	public String getBatchDescription() {
+		return batchDescription;
 	}
-	public void setBatchDes(String batchDes) {
-		this.batchDes = batchDes;
+
+
+	public void setBatchDescription(String batchDescription) {
+		this.batchDescription = batchDescription;
 	}
+
+
 	public String getBatchStatus() {
 		return batchStatus;
 	}
+
+
 	public void setBatchStatus(String batchStatus) {
 		this.batchStatus = batchStatus;
 	}
+
+
 	public int getBatchNoOfClasses() {
 		return batchNoOfClasses;
 	}
+
+
 	public void setBatchNoOfClasses(int batchNoOfClasses) {
 		this.batchNoOfClasses = batchNoOfClasses;
 	}
-	public int getProgId() {
-		return progId;
-	}
-	public void setProgId(int progId) {
-		this.progId = progId;
-	}
-	public String getProgNm() {
-		return progNm;
-	}
-	public void setProgNm(String progNm) {
-		this.progNm = progNm;
+
+
+	public int getProgramId() {
+		return programId;
 	}
 
-}
+
+	public void setProgramId(int programId) {
+		this.programId = programId;
+	}
+
+
+	public String getProgramName() {
+		return programName;
+	}
+
+
+	public void setProgramName(String programName) {
+		this.programName = programName;
+	}
+
+
+	
+	}

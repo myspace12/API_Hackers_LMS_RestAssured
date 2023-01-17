@@ -6,6 +6,15 @@
   <name>api_Hackers_RestAssured</name>
   
  
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.11.0</version>
+    <scope>test</scope>
+</dependency>
+
+ 
   <dependencies>
   <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>

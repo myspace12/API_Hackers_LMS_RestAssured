@@ -1,11 +1,15 @@
 package pojo_Classes;
 
+import io.cucumber.messages.TimeConversion;
+
 public class GetProg {
 	
 	private int progId;
 	private String progNm;
 	private String progDesc;
 	private String progStatue;
+	private TimeConversion creationTime;
+	private TimeConversion lastModTime;
 		
 	public int getProgId() {
 		return progId;
@@ -31,6 +35,17 @@ public class GetProg {
 	public void setProgStatue(String progStatue) {
 		this.progStatue = progStatue;
 	}
-	
+	public TimeConversion getCreationTime() {
+		return creationTime;
+	}
+	public void setCreationTime(TimeConversion creationTime) {
+		this.creationTime = creationTime;
+	}
+	public TimeConversion getLastModTime() {
+		return lastModTime;
+	}
+	public void setLastModTime(TimeConversion lastModTime) {
+		this.lastModTime = lastModTime;
+	}
 
 }
