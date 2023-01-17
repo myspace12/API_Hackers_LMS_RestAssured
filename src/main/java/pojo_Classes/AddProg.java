@@ -7,6 +7,8 @@ public class AddProg {
 		private String programName;
 		private String programDescription;
 		private String programStatus;
+		private String creationTime;
+	        private String lastModTime;
 	
 		public String getprogramName() {
 			return programName;
@@ -27,18 +29,22 @@ public class AddProg {
 		public void setprogramStatus(String programStatus) {
 			this.programStatus = programStatus;
 		}
-		
-
-		@Override
-		public String toString() {
-			return "AddProg[programName="+programName+",programDescription="+programDescription+",programStatus="+programStatus+"]";
+		public String getcreationTime() {
+		return creationTime;
 		}
-=======
-import java.util.Calendar;
+		public void setcreationTime(String creationTime) {
 
-public class AddProg {
-	
-	
+			this.creationTime = creationTime;
+		}
+		public String getlastModTime() {
+
+			return lastModTime;
+		}
+		public void setlastModTime(String lastModTime) {
+			this.lastModTime = lastModTime;
+		}
+
+		
 
 }
 
