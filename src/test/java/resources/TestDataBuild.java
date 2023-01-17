@@ -1,5 +1,7 @@
 package resources;
 
+import pojo_Classes.AddBatch;
+import pojo_Classes.AddProg;
 import pojo_Classes.PutBatch;
 
 public class TestDataBuild {
@@ -21,4 +23,35 @@ public class TestDataBuild {
 		
 	}
 
+	public AddProg addProgPayload(String programName,String programDescription,String programStatus)
+	
+	{
+		AddProg a=new AddProg();
+		a.setprogramName(programName);
+		a.setprogramDescription(programDescription);
+		a.setprogramStatus(programStatus);
+	
+		return a;
+		
+		
+	}
+	
+
+	public AddBatch postBatchPayload(String BatchName, String batchDes, 
+				String batchStatus, int noOfClasses, int progId , String progNm) 
+		{
+			AddBatch M = new AddBatch();
+			M.setBatchNm(BatchName);
+			M.setBatchDes(batchDes);
+			M.setBatchStatus(batchStatus);
+			M.setBatchNoOfClasses(noOfClasses);
+			M.setProgId(progId);
+			M.setProgNm(progNm);
+			
+			return M;
+			
+			
+		}
+
+	
 }
