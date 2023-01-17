@@ -3,6 +3,23 @@ package resources;
 public enum ApiResources {
 	
 	GetProgAPI ("/allPrograms"),
+
+	GetProg_byldAP("/programs"),
+	AddProgAPI("/saveprogram"),
+	PutProgbyldAPI("/putprogram"),
+	PutProgbyNmAPI("/program"),
+	DeleteProgramByIDAPI("/ deletebyprogname"),
+	DeleteProgramByNameAP("/ deletebyprogname"),
+	AddBatchAPI("/batches"),
+	GetBatchAP("/batches"), 
+	GetBatchByNmAP(" /batches/batchName"),
+	GetBatchByPrldAPI(" /batches/ program"),
+	PutBatchAPI("/batches"),
+	DeleteBatchByldAP("/ deletebyprogid");
+
+	
+
+=======
 	
 	GetProg_byIdAPI("/programs/"),
 
@@ -29,6 +46,7 @@ public enum ApiResources {
 	DeleteBatchByIdAPI("/deletebyprogid");
 
 		
+
 			
     private String resource;
 	
