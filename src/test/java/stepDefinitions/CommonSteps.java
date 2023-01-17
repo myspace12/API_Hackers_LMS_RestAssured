@@ -22,6 +22,9 @@ public class CommonSteps extends Utils {
 	Response response;
 	Add_BatchSteps data = new Add_BatchSteps();
 	PutBatchSteps batch= new PutBatchSteps();
+	Put_ProgSteps Prog=new Put_ProgSteps();
+	Add_ProgSteps q=new Add_ProgSteps();
+
 
 	@Given("user has baseURI")
 	public void user_has_baseURI() throws IOException {
@@ -39,7 +42,9 @@ public class CommonSteps extends Utils {
 
 		if (method.equalsIgnoreCase("POST")) {
 			
-
+			res = data.req;
+			res = q.req;
+			
 			response = res.when().post(resourceAPI.getResource()).then().spec(responseSpecification()).extract()
 					.response();
 
@@ -84,7 +89,7 @@ public class CommonSteps extends Utils {
 	    }
 	    else if(method.equalsIgnoreCase("PUT") && resource.contains("Prog"))
 	    {
-	    	
+	    	res=Prog.req;
 	    	response = res.when().delete(resourceAPI.getResource()+id)
 	    	.then().spec(responseSpecificationForTypeText()).extract().response();
 	    }
