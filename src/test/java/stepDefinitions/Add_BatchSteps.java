@@ -13,7 +13,6 @@ import java.io.IOException;
 import io.restassured.specification.RedirectSpecification;
 import io.restassured.specification.RequestSpecification;
 import resources.ApiResources;
-=======
 import io.cucumber.java.en.Given;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
