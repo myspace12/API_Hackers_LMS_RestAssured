@@ -19,8 +19,6 @@ public enum ApiResources {
 	DeleteBatchByldAP("/deletebyprogid/");
 
 	
-
-=======
 	
 	GetProg_byIdAPI("/programs/"),
 
