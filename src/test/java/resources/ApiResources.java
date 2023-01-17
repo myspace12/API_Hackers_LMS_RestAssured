@@ -4,19 +4,19 @@ public enum ApiResources {
 	
 	GetProgAPI ("/allPrograms"),
 
-	GetProg_byldAP("/programs/"),
+	GetProg_byldAPI("/programs/"),
 	AddProgAPI("/saveprogram"),
 	PutProgbyldAPI("/putprogram/"),
 	PutProgbyNmAPI("/program/"),
 	DeleteProgramByIDAPI("/ deletebyprogname/"),
-	DeleteProgramByNameAP("/ deletebyprogname/"),
+	DeleteProgramByNameAPI("/ deletebyprogname/"),
 	AddBatchAPI("/batches"),
-	GetBatchAP("/batches"), 
-	GetBatchByNmAP(" /batches/batchName/"),
+	GetBatchAPI("/batches"), 
+	GetBatchByNmAPI(" /batches/batchName/"),
 	GetBatchByPrldAPI(" /batches/ program/"),
 	GetBatchByIdAPI("/batches/batchId/"),
 	PutBatchAPI("/batches/"),
-	DeleteBatchByldAP("/deletebyprogid/");
+	DeleteBatchByldAPI("/deletebyprogid/");
 
 	
 				
