@@ -2,6 +2,7 @@ package pojo_Classes;
 
 public class AddBatch {
 
+
 	private String batchName;
 	private String batchDescription;
 	private String batchStatus;
@@ -57,6 +58,9 @@ public class AddBatch {
 		this.programName = programName;
 	}
 
+=======
+
 	
 
 }
+
