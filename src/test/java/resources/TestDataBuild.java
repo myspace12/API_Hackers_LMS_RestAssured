@@ -5,7 +5,7 @@ package resources;
 import pojo_Classes.AddProg;
 import pojo_Classes.AddBatch;
 import pojo_Classes.PutProg;
-import pojo_Classes..PutBatch;
+import pojo_Classes.PutBatch;
 import pojo_Classes.GetBatch;
 import pojo_Classes.GetProg;
 
