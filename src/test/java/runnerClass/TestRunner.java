@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features="src/test/resources/Feature",
 		glue= "stepDefinitions",
-		plugin= {"pretty",
+    plugin= {"pretty",
 				"html:target/Cucumber.html",
                 "json:target/Cucumber.json",
                  "rerun:target/failedScenarios.txt"})

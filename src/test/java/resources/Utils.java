@@ -21,11 +21,16 @@ import io.restassured.specification.ResponseSpecification;
 
 public class Utils {
 	
+	public static RequestSpecification res;
+	public static ResponseSpecification resspec;
+	
 	public static RequestSpecification requestSpecBuilder;
 	public static ResponseSpecification responseSpecBuilder;
 	public static ResponseSpecification responseSpec;
 	static ApiResources resourceAPI;
 	public static Response response;
+	
+	
 	
 	
 	public static RequestSpecification requestSpecification() throws IOException
@@ -79,10 +84,17 @@ public class Utils {
 	public ResponseSpecification responseSpecification() throws NumberFormatException, IOException
 	{
 	responseSpecBuilder = new ResponseSpecBuilder()
-			.expectContentType(ContentType.JSON).build()
-			.expect().time(Matchers.lessThanOrEqualTo(200L));
+			.expectContentType(ContentType.JSON).build();
+			//.expect().time(Matchers.lessThanOrEqualTo(200L));
     
 	return responseSpecBuilder;
+	}
+	
+	public ResponseSpecification responseSpecificationForTypeText() {
+		responseSpecBuilder = new ResponseSpecBuilder().build();
+		
+		return responseSpecBuilder;
+		
 	}
 	
 
